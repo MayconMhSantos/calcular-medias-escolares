@@ -1,4 +1,3 @@
-
 var arrayAluno = new Array();
 var  aluno
 var nota1 = 0, nota2 = 0, cont = 1
@@ -7,7 +6,7 @@ for(var i = 0; i < 2; i++){
 
     aluno = prompt("Digite o nome do "+cont+" aluno.")
     if(aluno == "" || aluno == null){ 
-        alert("o nome do aluno não pode sem vazio!")
+        alert("Campo nome do aluno, não pode ser vazio!!")
         aluno = prompt("Digite o nome do "+cont+" aluno.")
         if(aluno == "" || aluno == null){ 
             alert("Processo finalizado!")
@@ -35,9 +34,9 @@ arrayAluno.forEach(element => {
 
 function promptInt(element) {
     while (true) {
-            nota1 = parseInt(prompt("Digite a peimeira nota do Aluno "+ element));
+            nota1 = parseInt(prompt("Digite a primeira nota do Aluno "+ element));
         if (!isNaN(nota1)){
-            nota2 = parseInt(prompt("Digite a Segunad nota do Aluno "+ element));
+            nota2 = parseInt(prompt("Digite a Segunda nota do Aluno "+ element));
             if (!isNaN(nota2)) return media(nota1, nota2);
         }
     }
